@@ -246,6 +246,7 @@ for model_name, model_file in zip(model_names, model_files):
   plt.xlabel('Valores reales')
   plt.ylabel('Predicciones')
   plt.title(f'Predicciones vs Valores reales: {model_name}')
+  plt.savefig(f'{model}.png') # Descarga las graficas de los modelos
   plt.show()
 # Los resultados muestran que Lasso es el modelo con mejores metricas, el cual es usado para calcular los coeficientes
 

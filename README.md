@@ -41,6 +41,14 @@ Los princioales resultados obtenidos a partir del análisis fueron:
 - Los vuelos que presentan 1 o 2 escalas son más caros que los vuelos directos.
 - No existe una diferencia significativa entre los precios de los vuelos entre los días de la semana y los fines de semana.
 
+#### Métricas de evaluación
+|Modelo| $R^2$ |MAE|MAPE|
+|:---:|:---:|:---:|:---:|
+|Lineal|  0.920154|  4156.253284|  43.253665|
+|Ridge|  0.920154|  4156.257065|  43.253623|
+|Lasso|  0.920154|  4156.237780|  43.253089|
+|ElasticNet|  0.920019|  4177.404655|  43.360865|
+
 Los resultados obtenidos luego de aplicar los modelos fueron:
 - La clase posee una mayor correlación con el precio de los vuelos.
 - Los modelos regresión lineal, ridge y lasso poseen un rendimiento muy similar, con una ligera variación en sus métricas. A pesar de estas diferencias no muy significativas, se optó por definir lasso como el modelo más eficiente.
